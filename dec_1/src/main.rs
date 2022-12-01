@@ -1,5 +1,11 @@
 // https://adventofcode.com/2022/day/1
 
+
+fn main() {
+    assert_eq!(part_one(), 68787);
+    assert_eq!(part_two(), 198041);
+}
+
 fn part_one() -> u32 {
     let top_1 = std::fs::read_to_string("input.txt")
         .expect("Shoud read the input file")
@@ -29,7 +35,3 @@ fn part_two() -> u32 {
     top_3
 }
 
-fn main() {
-    assert_eq!(part_one(), 68787);
-    assert_eq!(part_two(), 198041);
-}
